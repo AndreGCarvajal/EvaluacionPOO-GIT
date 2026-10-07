@@ -1,14 +1,14 @@
 class Alojamiento:
 
-    def __init__(self, nombre, tipo, precio, capacidad):
+    def __init__(self, nombre, tipo, precio, capacidad): # Inicializamos los atributos básicos de la instancia
         self.nombre = nombre
         self.tipo = tipo
         self.precio = precio
         self.capacidad = capacidad
-
     def mostrar_info(self):
-        # COMPLETAR
-        pass
+        # Retornamos la cadena formateada con el formato de moneda y personas solicitado
+        return f"Alojamiento: {self.nombre} | Tipo: {self.tipo} | Precio: ${self.precio:,.2f} | Capacidad: {self.capacidad} personas"
+
 
     # Reglas (léelas con atención, no son solo "rellenar")
     # 1. mostrar_info()
