@@ -20,7 +20,7 @@ class Alojamiento:
     def precio_por_persona(self):
         # COMPLETAR
         pass
-    
+
     def precio_por_persona(self):
         # Primero validamos que ni el precio ni la capacidad sean menores o iguales a cero
         if self.precio <= 0 or self.capacidad <= 0:
@@ -37,16 +37,14 @@ class Alojamiento:
     # no debe lanzar error: debe devolver None.
     # El resultado debe estar redondeado a 2 decimales.
 
-
-# Objeto 1
+# Objeto 1: Creamos la instancia para la casa
 casa = Alojamiento(
     "Casa Centro",
     "Casa",
     1800,
     6
 )
-
-# Objeto 2
+# Objeto 2: Creamos la instancia para el departamento
 departamento = Alojamiento(
     "Departamento Reforma",
     "Departamento",
@@ -55,8 +53,11 @@ departamento = Alojamiento(
 )
 
 
-# Completa las instrucciones necesarias para:
 # 1. Mostrar la información de la casa.
+print(casa.mostrar_info())
 # 2. Mostrar el precio por persona de la casa.
+print(f"Precio por persona: ${casa.precio_por_persona()}")
 # 3. Mostrar la información del departamento.
+print(departamento.mostrar_info())
 # 4. Mostrar el precio por persona del departamento.
+print(f"Precio por persona: ${departamento.precio_por_persona()}")
